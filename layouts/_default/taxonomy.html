@@ -16,7 +16,7 @@
         <ul class="taxo__ul">
           {{ range .Pages }}
           <li class="taxo__li">
-            <a href="{{ .Permalink }}" class="taxo__title">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" class="taxo__title">{{ .Title }}</a>
           </li>
           {{ end }}
         </ul>

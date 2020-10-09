@@ -330,7 +330,7 @@
 
 
   // ========================== search ==========================
-    {{ $permalink:= .Permalink }}
+    {{ $permalink:= .RelPermalink }}
     var permalink = JSON.parse({{ $permalink | jsonify }});
     var searchResults = null;
     var searchMenu = null;

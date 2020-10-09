@@ -2,7 +2,7 @@
 <div class="grow"></div>
 <nav class="pagination-single">
   {{ if .NextInSection }}
-    <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}" class="pagination-single__right">
+    <a href="{{ .NextInSection.RelPermalink }}" title="{{ .NextInSection.Title }}" class="pagination-single__right">
       <div class="pagination-single__icon">
         {{ partial "svgs/arrow-back.svg" (dict "width" 22 "height" 22) }}
       </div>
@@ -11,7 +11,7 @@
   {{ end }}
   <div class="grow"></div>
   {{ if .PrevInSection }}
-    <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}" class="pagination-single__left">
+    <a href="{{ .PrevInSection.RelPermalink }}" title="{{ .PrevInSection.Title }}" class="pagination-single__left">
       <div class="pagination-single__left-title">{{ .PrevInSection.Title }}</div>
       <div class="pagination-single__icon">
         {{ partial "svgs/arrow-forward.svg" (dict "width" 22 "height" 22) }}
